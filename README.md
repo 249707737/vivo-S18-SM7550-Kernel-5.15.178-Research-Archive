@@ -5,7 +5,7 @@ vivo S18 (PD2323 / SM7550 / Kernel 5.15.178) 提权研究归档
 设备：vivo S18 (PD2323 / V2323A)，高通 SM7550 (Snapdragon 7 Gen 3)
 内核：5.15.178-g0f1e91e908f4-dirty
 系统：PD2323_A_16.2.9.0.W10 (OriginOS 6 / Android 16)
-SPL：2026-05-01
+SPL：2027-05-01
 BL：未解锁（ro.boot.verifiedbootstate=green）
 权限：uid=2000(shell)，SELinux enforcing
 
@@ -54,8 +54,7 @@ rt_mutex_waiter 布局 6.6 版（pi_tree@0x28） 5.15 版（pi_tree@0x18） 所�
 14. prepare_good_kernel_page 失效数据
 15. 核心防御矩阵
 16. 结论
-17. 资产位置
-18. 相关仓库
+17. 相关仓库
 
 ---
 
@@ -627,22 +626,6 @@ S18 (5.15.178) 上所有已知公开提权路径均不可行。
 · CVE-2026-64560（同族漏洞，UAF 可触发，但堆喷隔离导致无法利用）
 
 确定性方案：转 6.6 设备（Neo11 Plus / blazer / frankel），IonStack 原版 exploit 直接可用（成功率 70-90%）。
-
----
-
-17. 资产位置
-
-资产 路径
-boot.img /vol2/1000/编译/boot.img
-vmlinux（59 MB，boot 提取） /vol2/1000/编译/vmlinux
-System.map /vol2/1000/编译/System.map
-SELinux 禁用工具 /vol2/1000/编译/ghostlock-selinux-disabler/
-完整 GhostLock（6.6） /vol2/1000/编译/kernel_src/CyberMeowfia/IonStack/CVE-2026-43499/
-149 内核（QEMU 用） /vol2/1000/编译/kernel_src_old_backup/vmlinux
-QEMU rootfs /vol2/1000/编译/rootfs/trixie.img
-slab 日志 /vol2/1000/编译/slab_logs/
-
----
 
 18. 相关仓库
 
