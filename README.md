@@ -627,6 +627,7 @@ S18 (5.15.178) 上所有已知公开提权路径均不可行。
 
 确定性方案：转 6.6 设备（Neo11 Plus / blazer / frankel），IonStack 原版 exploit 直接可用（成功率 70-90%）。
 
+---
 18. 相关仓库
 
 · CVE-2026-64560-Analysis —— posix-cpu-timers 非 leader exec 竞争 UAF 分析
@@ -635,6 +636,7 @@ S18 (5.15.178) 上所有已知公开提权路径均不可行。
 · Android-16-SM7550-Kernel-5.15.178-Exploit-Research —— 防御矩阵测绘
 · Android-16-SM7550-Kernel-5.15.178-LPE-Research —— 盲测记录
 · Android-15-Kernel-5.15-SM7550- —— 早期测试存档
+---
 
 各仓库数据勘误汇总
 
