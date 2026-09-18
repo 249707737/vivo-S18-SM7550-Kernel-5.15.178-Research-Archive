@@ -5,7 +5,7 @@ vivo S18 (PD2323 / SM7550 / Kernel 5.15.178) 提权研究归档
 设备：vivo S18 (PD2323 / V2323A)，高通 SM7550 (Snapdragon 7 Gen 3)
 内核：5.15.178-g0f1e91e908f4-dirty
 系统：PD2323_A_16.2.9.0.W10 (OriginOS 6 / Android 16)
-SPL：2027-05-01
+SPL：2026-05-01
 BL：未解锁（ro.boot.verifiedbootstate=green）
 权限：uid=2000(shell)，SELinux enforcing
 
